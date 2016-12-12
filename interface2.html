@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Elder's Quorum President</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Edvaldo de Oliveira Melo">
+        <meta name="description" content="Home Teachings and Visiting Teachers">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="visits.css" media="screen">
+    </head>
+    <script>
+        function myFunction(x) {
+            x.style.background = "#D6CFA5";
+        }
+        function formsubmit() {
+            document.getElementById("userinput").submit();
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1 onmouseover="style.color = '#D6CFA5'"
+                onmouseout="style.color = 'white'">LDS Home Teaching Reports - Elder's Quorum President DashBoard</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="interface1.html">Bishop</a></li><br>
+                <li><a href="interface2.html">Elder's Quorum President</a></li><br>
+                <li><a href="interface3.html">Visitors</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h2>Home Teachings Report</h2>
+
+            <form name="userinput" action="mailto:cbaldwin1992@gmail.com" method="post" enctype="text/plain">
+                <h3>First Teacher's Name:</h3><br>
+                <input type="text" name="name" onfocus="myFunction(this)"><br>
+                <h3>Second Teacher's Name:</h3><br>
+                <input type="text" name="name" onfocus="myFunction(this)"><br>
+                <h3>Priesthood Leader/ Home Patriarch:</h3><br>
+                <input type="text" name="name" onfocus="myFunction(this)"><br>
+                <h3>Number of Persons at Home:</h3><br>
+                <input type="text" name="name" onfocus="myFunction(this)"><br>
+                <h3>Comments about the homes visited:</h3><br>
+                <input type="text" name="comment" size="150" onfocus="myFunction(this)"><br><br>
+                <h3>Comments about the visitors:</h3><br>
+                <input type="text" name="comment" size="150" onfocus="myFunction(this)"><br><br>
+                <input type="submit" onclick="alert('Your report has been sent!');formsubmit()" value="Send">
+                <input type="reset" value="Reset">
+            </form>
+            <br>
+        </article>
+
+        <footer>Copyright © LDSWard</footer>
+
+    </div>
+
+</body>
+</html>
